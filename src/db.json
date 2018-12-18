@@ -1,0 +1,41 @@
+{
+  "series": [
+    {
+      "id": 2,
+      "name": "How I Met Your Mother",
+      "status": "watched",
+      "genre": "Comédia",
+      "image": "https://imageproxy.swm.digital/image?u=http%3A%2F%2Fmediacms.swm.digital%2Fmedia%2F3035%2Fhmym-show_howimetyourmother_backgroundimagelogo.jpg&format=jpeg&w=1200&q=80",
+      "comments": "Bom para descontrair"
+    },
+    {
+      "name": "Dragon Ball Super",
+      "status": "watched",
+      "genre": "Ação",
+      "comments": "O melhor anime de todos os tempos!",
+      "image": "http://www.dragonballinsider.com/wp-content/uploads/2015/09/Dyamnic.jpg",
+      "id": 6
+    },
+    {
+      "name": "The Punisher",
+      "status": "watched",
+      "genre": "Ação",
+      "comments": "Série sensacional!",
+      "image":"https://static1.squarespace.com/static/571e7cc14c2f859b347c0167/5723c04dc8f51c824e5a676a/5a14d4544192021369506d3d/1511355287812/poster+-+Punisher.jpg",
+      "id": 7
+    },
+    {
+      "name": "Vikings",
+      "status": "watching",
+      "genre": "Ação",
+      "comments": "Uma ótima história sobre vikings.",
+      "image": "https://i.pinimg.com/originals/64/f5/f6/64f5f614a30e2fa88f8345e3552cbb7f.jpg",
+      "id": 8
+    }
+  ],
+  "genres": [
+    "Comédia",
+    "Drama",
+    "Ação"
+  ]
+}
