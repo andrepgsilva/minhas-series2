@@ -68,28 +68,30 @@ class EditSeries extends Component {
               <Redirect to={this.state.redirect} />
             }
             <h1>Editar Série</h1>
-            <form>
-              Nome: <input type="text" ref="name" className="form-control" /><br />
+            <div className="col-md-3"></div>
+            <form className="col-md-6">
+              Nome: <input type="text" ref="name" className="form-control" />
               Status: 
-              <select ref="status">
+              <select className="form-control" ref="status">
                 { 
                     Object.keys(statuses).map( key => {
                       return <option key={key} value={ key }>{ statuses[key] }</option>
                     })
                 }
-              </select><br /><br />
+              </select>
               Gênero: 
-              <select ref="genre">
+              <select className="form-control" ref="genre">
                 { 
                     this.state.genres.map( key => {
                       return <option key={key} value={ key }>{ key }</option>
                     })
                 }
-              </select><br /><br />
-              Comentários: <textarea ref="comments" className="form-control" /><br /><br />
-              Imagem da Série: <input type="text" ref="image" className="form-control" /><br />
+              </select>
+              Comentários: <textarea ref="comments" className="form-control" />
+              Imagem da Série: <input type="text" ref="image" className="form-control" placeholder="Insert a image link"/>
               <button type="button" onClick={this.saveSeries} className="btn btn-primary">Salvar</button>
             </form>
+            <div className="col-md-3"></div>
           </section>
         );
     }

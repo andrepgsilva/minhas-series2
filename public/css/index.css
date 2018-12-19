@@ -38,3 +38,7 @@
 .buttons-caption > .btn {
     margin-left: 8px;
 }
+
+.intro-section .form-control {
+    margin-bottom: 20px;
+}
