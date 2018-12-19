@@ -62,7 +62,9 @@ class Series extends Component {
         return (
             <div key={serie.id} className="item serie-item col-md-6 col-xs-12 col-lg-4">
               <div>
-                <img className="group list-group-image serie-image" src={serie.image} alt="" />
+                <Link to={`/series-edit/${serie.id}`}>
+                  <img className="group list-group-image serie-image" src={serie.image} alt="" />
+                </Link>
                 <div className="caption">
                   <h4 className="group inner list-group-item-heading">
                     {serie.name}

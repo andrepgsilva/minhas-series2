@@ -11,8 +11,6 @@ import Series from './Series';
 import EditSeries from './EditSeries';
 import api from './Api';
 
-const About = () => <section className="intro-section"><h1>Sobre</h1></section>;
-
 class App extends Component {
     constructor(props) {
       super(props);
@@ -69,16 +67,12 @@ class App extends Component {
                     <li>
                       <Link to="/new">Nova Série</Link>
                     </li>
-                    <li>
-                      <Link to="/about">Sobre</Link>
-                    </li>
                   </ul>
                 </div>
               </div>
             </nav>
             <Route exact path='/' component={Home} />
             <Route path='/series-edit/:id' component={EditSeries} />
-            <Route exact path='/about' component={About} />
             <Route exact path='/new' component={NewSeries} />
             <Route path='/series/:genre' component={Series} />
           </div>
