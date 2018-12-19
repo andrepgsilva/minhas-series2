@@ -60,20 +60,20 @@ class Series extends Component {
 
     renderSeries(serie) {
         return (
-            <div key={serie.id} className="item col-xs-4 col-lg-4">
+            <div key={serie.id} className="item serie-item col-md-6 col-xs-12 col-lg-4">
               <div>
-                <img className="group list-group-image" width="80%" height="400px" src={serie.image} alt="" />
+                <img className="group list-group-image serie-image" src={serie.image} alt="" />
                 <div className="caption">
                   <h4 className="group inner list-group-item-heading">
                     {serie.name}
                   </h4>
                   <div className="row">
-                    <div className="col-xs-12 col-md-6">
-                      <p className="lead">
+                    <div className="col-xs-12 col-md-12">
+                      <p className="serie-status">
                         {serie.genre} / {statuses[serie.status]}
                       </p>
                     </div>
-                    <div className="col-xs-12 col-md-6">
+                    <div className="col-xs-12 buttons-caption">
                       <Link to={`/series-edit/${serie.id}`} className="btn btn-success" >Editar</Link>
                       <a className="btn btn-danger" onClick={ ()=> this.deleteSeries(serie.id) }>Excluir</a>
                     </div>
@@ -92,7 +92,7 @@ class Series extends Component {
                 this.state.isLoading && 
                 <p>Carregando, aguarde...</p>
               }
-
+              <div class="container-fluid">
               {
                 ! this.state.isLoading && this.state.series.length === 0 &&
                 <div className='alert alert-info'>Nenhuma Série Para Ver</div>
@@ -104,6 +104,7 @@ class Series extends Component {
                   this.state.series.map(this.renderSeries)
                 }
               </div>
+            </div>
             </section>
         );
     }

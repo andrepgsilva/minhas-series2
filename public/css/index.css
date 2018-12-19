@@ -1,0 +1,40 @@
+/*
+    Home Page
+*/
+.main-image > img {
+    width: 55%;
+}
+
+/* 
+    Genre Serie Page
+*/
+
+#intro > h1 {
+    padding-bottom: 50px;
+}
+
+/*
+    Serie Component
+*/
+.serie-item {
+    margin-bottom: 8vh;
+}
+
+.serie-image {
+    width: 70%;
+    height: 250px;
+}
+
+.serie-status {
+    font-size: 1.7rem;
+}
+
+.caption {
+    margin-top: 4%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.buttons-caption > .btn {
+    margin-left: 8px;
+}
