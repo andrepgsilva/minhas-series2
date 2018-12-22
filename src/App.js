@@ -44,12 +44,18 @@ class App extends Component {
             <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
               <div className="container">
                 <div className="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                   <a className="navbar-brand page-scroll" href="#page-top">
                     <img src="/images/logo.png" height="30" />
                   </a>
                 </div>
 
-                <div className="collapse navbar-collapse navbar-ex1-collapse">
+                <div className="collapse navbar-collapse navbar-ex1-collapse" id="navbar-ex1-collapse">
                   <ul className="nav navbar-nav">
                     <li>
                       <Link to="/">Home</Link>
